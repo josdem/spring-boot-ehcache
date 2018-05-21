@@ -1,4 +1,7 @@
-package com.jos.dem.springboot.cache.service;
+package com.jos.dem.springboot.cache.service.impl;
+
+import com.jos.dem.springboot.cache.model.Person;
+import com.jos.dem.springboot.cache.service.PersonService;
 
 @Service
 public class PersonServiceImpl implements PersonService {
@@ -8,10 +11,10 @@ public class PersonServiceImpl implements PersonService {
     new Person("tgrip", "tgrip@email.com"),
     new Person("edzero", "edzero@email.com"),
     new Person("jeduan", "jeduan@email.com"),
-    new Person("siedrix", "siedrix@email.com")
+    new Person("edrix", "siedrix@email.com")
   );
 
-  public List<Person> getAll(){
+  public List<Person> getAll()
     return persons;
   }
 
