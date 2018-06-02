@@ -1,4 +1,4 @@
-package com.example.springbootehcache;
+package com.jos.dem.springboot.cache;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
