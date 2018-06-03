@@ -15,11 +15,11 @@ import com.jos.dem.springboot.cache.repository.PersonRepository;
 public class DemoApplication {
 
   private List<Person> persons = Arrays.asList(
-    new Person(1, "josdem", "joseluis.delacruz@gmail.com"),
-    new Person(2, "tgrip", "tgrip@email.com"),
-    new Person(3, "edzero", "edzero@email.com"),
-    new Person(4, "jeduan", "jeduan@email.com"),
-    new Person(5, "edrix", "siedrix@email.com")
+    new Person(1L, "josdem", "joseluis.delacruz@gmail.com"),
+    new Person(2L, "tgrip", "tgrip@email.com"),
+    new Person(3L, "edzero", "edzero@email.com"),
+    new Person(4L, "jeduan", "jeduan@email.com"),
+    new Person(5L, "edrix", "siedrix@email.com")
   );
 
 
