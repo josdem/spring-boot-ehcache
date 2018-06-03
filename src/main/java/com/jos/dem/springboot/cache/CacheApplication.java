@@ -12,7 +12,7 @@ import com.jos.dem.springboot.cache.model.Person;
 import com.jos.dem.springboot.cache.repository.PersonRepository;
 
 @SpringBootApplication
-public class DemoApplication {
+public class CacheApplication {
 
   private List<Person> persons = Arrays.asList(
     new Person(1L, "josdem", "joseluis.delacruz@gmail.com"),
