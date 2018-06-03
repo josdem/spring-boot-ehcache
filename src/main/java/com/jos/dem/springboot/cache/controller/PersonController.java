@@ -10,7 +10,7 @@ import com.jos.dem.springboot.cache.model.Person;
 import com.jos.dem.springboot.cache.service.PersonService;
 
 import org.slf4j.Logger;
-import org.slf4j.LogFactory;
+import org.slf4j.LoggerFactory;
 
 @RestController
 public class PersonController {
