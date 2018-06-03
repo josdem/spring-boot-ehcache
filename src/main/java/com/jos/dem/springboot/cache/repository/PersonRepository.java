@@ -1,11 +1,14 @@
 package com.jos.dem.springboot.cache.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository
-import com.jos.dem.springboot.jpa.model.Person
+import java.util.List;
 
-interface PersonRepository extends JpaRepository<Person, Long>{
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.jos.dem.springboot.cache.model.Person;
 
-	Person save(Person person)
-	List<Person> findAll()
+public interface PersonRepository extends JpaRepository<Person, Long>{
+
+	Person save(Person person);
+  List<Person> findAll();
+	void deleteAll();
 
 }
