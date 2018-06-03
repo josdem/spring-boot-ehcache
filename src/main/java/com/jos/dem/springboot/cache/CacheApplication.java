@@ -5,6 +5,7 @@ import java.util.Arrays;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -12,6 +13,7 @@ import com.jos.dem.springboot.cache.model.Person;
 import com.jos.dem.springboot.cache.repository.PersonRepository;
 
 @SpringBootApplication
+@EnableCaching
 public class CacheApplication {
 
   private List<Person> persons = Arrays.asList(

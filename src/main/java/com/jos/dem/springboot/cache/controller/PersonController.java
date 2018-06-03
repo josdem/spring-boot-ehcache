@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.cache.annotation.Cacheable;
 import com.jos.dem.springboot.cache.model.Person;
 import com.jos.dem.springboot.cache.service.PersonService;
 
@@ -22,6 +22,7 @@ public class PersonController {
   private PersonService personService;
 
   @RequestMapping("/")
+  @Cacheable("persons")
   public List<Person> index(){
     log.info("Getting all persons");
     long start = new Date().getTime();
