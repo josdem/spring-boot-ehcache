@@ -1,5 +1,6 @@
 package com.jos.dem.springboot.cache.controller;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.RestController;
@@ -22,8 +23,11 @@ public class PersonController {
 
   @RequestMapping("/")
   public List<Person> index(){
-    log.info("Calling get all persons");
-    return personService.getAll();
+    log.info("Getting all persons");
+    long start = new Date().getTime();
+    List<Person> persons = personService.getAll();
+    log.info("Finishing getting all persons at: " + (new Date().getTime() - start) + " milliseconds");
+    return persons;
   }
 
 }
