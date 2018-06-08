@@ -3,9 +3,8 @@
   updateCheck="true" monitoring="autodetect" dynamicConfig="true">
 
   <cache name="persons"
-    maxElementsInMemory="1000" eternal="false"
-    overflowToDisk="false"
-    timeToLiveSeconds="300">
+    maxEntriesLocalHeap="10000" eternal="false"
+    timeToIdleSeconds="300" timeToLiveSeconds="600">
   </cache>
 
 </ehcache>
