@@ -5,8 +5,7 @@
   <cache name="persons"
     maxElementsInMemory="1000" eternal="false"
     overflowToDisk="false"
-    timeToLiveSeconds="300"
-    memoryStoreEvictionPolicy="LFU" transactionalMode="off">
+    timeToLiveSeconds="300">
   </cache>
 
 </ehcache>
